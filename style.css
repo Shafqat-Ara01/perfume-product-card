@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 172, 176);
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 588px;
+  width: 90%;
+}
+.img {
+  flex: 1;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.content {
+  flex: 1;
+  background-color: white;
+
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.content p {
+  font-family: "Fraunces ", sans-serif;
+  color: hsl(228, 12%, 48%);
+  padding: 30px;
+}
+.content h1 {
+  padding: 0px 30px 0px 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.content .info p {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.content .price {
+  padding-left: 30px;
+  font-family: "Fraunces", serif;
+  display: flex;
+}
+.price h2 {
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.price span {
+  margin-left: 8px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 300;
+}
+.button {
+  padding-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.button button {
+  width: 90%;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  text-align: center;
+  height: 2.5rem;
+  border-radius: 8px;
+  color: hsl(30, 38%, 92%);
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 42%, 18%);
+  box-shadow: 0px 0px 15px hsl(158, 36%, 37%);
+}
+@media (max-width: 660px) {
+  .card {
+    flex-direction: column;
+  }
+  .content {
+    border-radius: 0px 0px 12px 12px;
+  }
+  .img img {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+}
